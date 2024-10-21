@@ -38,12 +38,11 @@ onMounted(() => {
     <table class="table table-striped table-hover">
         <thead>
             <tr>
-
             </tr>
         </thead>
         <tbody>
             <tr v-for="aluno in listaAlunos" :key="aluno.id">
-                <td>{{ aluno.matricula }}</td>
+                <td>{{ aluno.matricula | hidden}}</td>
                 <td>{{ aluno.nome }}</td>
                 <td>{{ aluno.ativo ? 'Sim' : 'Não' }}</td>
             </tr>
