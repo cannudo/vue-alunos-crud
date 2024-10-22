@@ -1,8 +1,10 @@
 package com.example.aluno_rest.entities;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Aluno {
+public class Aluno implements Serializable {
+	private static final long serialVersionUID = 1L;
 	private int id;
 	private String matricula;
 	private String nome;
